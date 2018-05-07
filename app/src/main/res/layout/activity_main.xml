@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.mansion.yang.mixtureapp.MainActivity">
+
+    <com.mansion.yang.mixtureapp.widget.SearchEditText
+        android:id="@+id/activity_main_input_edittext"
+        style="@style/editTextStyle"
+        android:layout_marginTop="20dp" />
+
+    <com.mansion.yang.mixtureapp.widget.SearchEditText
+        android:id="@+id/activity_main_input_edittext2"
+        style="@style/editTextStyle"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
