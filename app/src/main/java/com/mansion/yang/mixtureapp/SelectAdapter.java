@@ -11,11 +11,11 @@ import java.text.NumberFormat;
 
 
 public class SelectAdapter extends RecyclerView.Adapter<SelectAdapter.ViewHolder>{
-    private MainActivity activity;
+    private ShoppingActivity activity;
     private SparseArray<GoodsItem> dataList;
     private NumberFormat nf;
     private LayoutInflater mInflater;
-    public SelectAdapter(MainActivity activity, SparseArray<GoodsItem> dataList) {
+    public SelectAdapter(ShoppingActivity activity, SparseArray<GoodsItem> dataList) {
         this.activity = activity;
         this.dataList = dataList;
         nf = NumberFormat.getCurrencyInstance();

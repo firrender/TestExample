@@ -11,10 +11,10 @@ import java.util.ArrayList;
 
 public class TypeAdapter extends RecyclerView.Adapter<TypeAdapter.ViewHolder> {
     public int selectTypeId;
-    public MainActivity activity;
+    public ShoppingActivity activity;
     public ArrayList<GoodsItem> dataList;
 
-    public TypeAdapter(MainActivity activity, ArrayList<GoodsItem> dataList) {
+    public TypeAdapter(ShoppingActivity activity, ArrayList<GoodsItem> dataList) {
         this.activity = activity;
         this.dataList = dataList;
     }

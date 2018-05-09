@@ -1,23 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
-    tools:context="com.mansion.yang.mixtureapp.MainActivity">
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <com.mansion.yang.mixtureapp.widget.SearchEditText
-        android:id="@+id/activity_main_input_edittext"
-        style="@style/editTextStyle"
-        android:layout_marginTop="20dp" />
+    <com.mansion.yang.mixtureapp.widget.SlideLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <com.mansion.yang.mixtureapp.widget.SearchEditText
-        android:id="@+id/activity_main_input_edittext2"
-        style="@style/editTextStyle"
-        android:layout_marginTop="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:elevation="3dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"/>
+
+            <TextView
+                android:id="@+id/markSquare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="TextView"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#f0f0f0"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/showInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/textView6"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:text="详细信息" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="删除" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.mansion.yang.mixtureapp.widget.SlideLayout>
+
+    <TextView
+        android:id="@+id/tv_shopping"
+        android:padding="10dp"
+        android:background="@color/colorAccent"
+        android:text="购物车demo"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

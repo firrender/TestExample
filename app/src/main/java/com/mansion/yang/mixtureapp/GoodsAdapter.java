@@ -21,11 +21,11 @@ import se.emilsjolander.stickylistheaders.StickyListHeadersAdapter;
 public class GoodsAdapter extends BaseAdapter implements StickyListHeadersAdapter {
 
     private ArrayList<GoodsItem> dataList;
-    private MainActivity mContext;
+    private ShoppingActivity mContext;
     private NumberFormat nf;
     private LayoutInflater mInflater;
 
-    public GoodsAdapter(ArrayList<GoodsItem> dataList, MainActivity mContext) {
+    public GoodsAdapter(ArrayList<GoodsItem> dataList, ShoppingActivity mContext) {
         this.dataList = dataList;
         this.mContext = mContext;
         nf = NumberFormat.getCurrencyInstance();
@@ -114,7 +114,7 @@ public class GoodsAdapter extends BaseAdapter implements StickyListHeadersAdapte
 
         @Override
         public void onClick(View v) {
-            MainActivity activity = mContext;
+            ShoppingActivity activity = mContext;
             switch (v.getId()){
                 case R.id.tvAdd: {
                     int count = activity.getSelectedItemCountById(item.id);
