@@ -82,4 +82,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onYearMonthDayPicker"
+        android:text="年月日/年月选择" />
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAddress3Picker"
+        android:text="地址选择（只包括省级、地级）" />
+
 </LinearLayout>

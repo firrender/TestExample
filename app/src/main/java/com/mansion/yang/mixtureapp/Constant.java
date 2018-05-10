@@ -14,4 +14,7 @@ public class Constant {
     public final static String EXCEPTION_SWIPE_BACK_APPLICATION_NOT_NULL = "You've set a null application";
     public final static String EXCEPTION_ACTIVITY_NOT_NULL = "You've set a null activity";
     public final static String EXCEPTION_ACTIVITY_NOT_EXIST = "Activity is null or finishing";
+
+    public static final String DEBUG_TAG = "liyujiang";// LogCat的标记
+    public static final boolean DEBUG_ENABLE = false;// 是否调试模式
 }
